@@ -21,5 +21,26 @@ for(let i = 0; i < imageList.length; i++) {
 const headerList = document.getElementsByTagName("h2");
 
 for(let i = 0; i < headerList.length; i++) {
-    headerList[i].innerText = "Wakanda Forever";
+    headerList[i].innerText = "Ebony Groove";
 }
+
+// Get Extension Form Data
+const wrapper = document.querySelector(".wrapper"),
+    form = wrapper.querySelectorAll(".registration-form"),
+    submitInput = form[0].querySelector("input[type='submit'")
+
+function getFormData(e) {
+    e.preventDefault();
+
+    var formData = new FormData(form[0]);
+
+    var rating = formData.get('rate');
+    
+    alert(rating);
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+
+submitInput.addEventListener('click', getFormData, false);
+
+}, false);
