@@ -10,6 +10,6 @@
     ],
     "browser_action": {
         "default_popup": "Popup.html",
-        "default_title": "The Juice"
+        "default_title": "All Black Everything"
     }
 }

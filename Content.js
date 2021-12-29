@@ -10,6 +10,7 @@ let blackThroughTimeAndSpace = [
     "https://avatars.githubusercontent.com/u/88138569?s=400&u=c323f2140120fcca7448b058207d818eeb619e57&v=4"
 ];
 
+// Change images to ones of black celebrities
 const imageList = document.getElementsByTagName("img");
 
 for(let i = 0; i < imageList.length; i++) {
@@ -17,23 +18,31 @@ for(let i = 0; i < imageList.length; i++) {
     imageList[i].src = blackThroughTimeAndSpace[randomImage];
 }
 
+// Give all h2 elements a different text content
 const headerList = document.getElementsByTagName("h2");
 
 for(let i = 0; i < headerList.length; i++) {
     headerList[i].innerText = "Ebony Groove";
 }
 
+// Give all h3 elements a different text content
+const imagesA = document.getElementsByTagName("a");
+
+for(let i = 0; i < imagesA.length; i++) {
+    imagesA.textContent = "All Black Everything";
+}
+
 // Get Extension Form Data
 const wrapper = document.querySelector(".wrapper"),
     form = wrapper.querySelectorAll(".registration-form"),
-    submitInput = form[0].querySelector("input[type='submit'"),
+    submitInput = form[0].querySelector("input[type='submit']"),
     count = wrapper.querySelector("#count");
 
 function getFormData(e) {
     e.preventDefault();
 
     var formData = new FormData(form[0]);
-    var rating = formData.get('rate');
+    var rating = formData.get('vote');
     
     if(rating=="Yes") {
         count.textContent++;
@@ -46,6 +55,6 @@ function getFormData(e) {
 
 document.addEventListener('DOMContentLoaded', function(){
 
-submitInput.addEventListener('click', getFormData, false);
+    submitInput.addEventListener('click', getFormData, false);
 
 }, false);
