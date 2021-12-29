@@ -25,13 +25,6 @@ for(let i = 0; i < headerList.length; i++) {
     headerList[i].innerText = "Ebony Groove";
 }
 
-// Give all h3 elements a different text content
-const imagesA = document.getElementsByTagName("a");
-
-for(let i = 0; i < imagesA.length; i++) {
-    imagesA.textContent = "All Black Everything";
-}
-
 // Get Extension Form Data
 const wrapper = document.querySelector(".wrapper"),
     form = wrapper.querySelectorAll(".registration-form"),

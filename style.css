@@ -1,13 +1,19 @@
-body {
+html, body {
+    font-family: 'Open Sans', sans-serif;
     background-color: aliceblue;
-}
+    }
 
-h2 {
+.heading {
+    text-align: center;
     color: maroon;
 }
 
 h2:hover {
     color: black;
+}
+
+h4 {
+    color: maroon;
 }
 
 input {
