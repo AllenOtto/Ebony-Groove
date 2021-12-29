@@ -1,0 +1,19 @@
+h2:hover {
+    color: maroon;
+}
+
+input {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.submit {
+    color:white;
+    background-color: black;
+    margin: 10px 0 0;
+}
+
+.submit:hover {
+    background-color: maroon;
+    color: white;
+}
